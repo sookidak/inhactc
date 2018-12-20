@@ -15,6 +15,7 @@ $(document).ready(function() {
 	$tablist2=$(".tablist-type2"),
 	$qna=$(".qna"),
 	$location=$(".location-nav-wrap"),
+	$family=$(".family-site"),
 	$lang=$(".lang");
 
 	//메인 확인
@@ -98,6 +99,12 @@ $(document).ready(function() {
 	});
 	$location.on('blur mouseleave', function(event) {
 		$(this).find('a').removeClass('active');
+	});
+
+	//로케이션 이벤트
+	$family.find('a').on('click', function(event) {
+		//$(this).addClass('active');
+		$(this).toggleClass('active');
 	});
 
 
