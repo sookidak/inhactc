@@ -100,7 +100,7 @@
 .pagetitle-wrap .text-style1{margin-top:30px; line-height: 24px;}
 
 .contents{ position: relative;width:1180px;margin:0 auto 100px}
-.contents .text-style2{line-height: 24px;}
+.contents .text-style2,.contents .text-style7{line-height: 24px;}
 
 /* footer */
 .footer{background:#3d4044; position: relative;}
@@ -287,6 +287,18 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .etcbox-type4 .btn{  position: absolute;top: 7px;right: 0}
 
 
+/* 절차 */
+.box-table{ width: 100%; font-size:16px;}
+.box-table tr th{background:url('../img/img_line_h.png') center 0 repeat-y; padding:0px;font-family:'NotoKrR';}
+.box-table tr:first-child  th{background:url('../img/img_line_h_top.png') center center repeat-y;}
+.box-table th span{ border:3px solid #dddddd; display:block;width:200px; height:60px; line-height: 50px;background:#fff;}
+.box-table td.box-table-in{padding: 15px 0 15px 48px;  background: url('../img/ic_arrow_01.png') 18px center no-repeat; vertical-align:top;}
+.box-table tr:last-child td.box-table-in{padding-bottom:0px;}
+.box-table td ul{background:#f3f3f3; padding: 30px 25px 22px 25px; line-height: 24px;}
+.box-table td ul li{background: url('../img/ic_bullet01.png') 0 center no-repeat; padding-left:15px;margin-bottom:8px; color:#333;}
+.box-table tr:last-child th{background:url('../img/img_line_h_bottom.png') center center repeat-y;}
+
+
 /* section 공통상단 */
 .contents-top{text-align: center;line-height:38px;margin-bottom:70px;}
 .section-cont:after{content:'';display:block;clear:both;}
@@ -307,6 +319,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal;}
 .text-style5{font-family: 'NotoKrL'; font-size: 16px; color: #777;font-weight: normal;}
 .text-style6{font-family: 'NotoKrR'; font-size: 14px !important; color: #000;font-weight: normal;}
+.text-style7{font-family: 'NotoKrL'; font-size: 16px; color: #000;font-weight: normal;}
 .text-nec{vertical-align: bottom; color: #199da3; font-size: 14px;font-family: 'NotoKrR'; float: right; display: inline-block; position: relative;top: 5px; }
 .lineH{line-height: 24px;}
 
@@ -325,7 +338,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;} 
 .table th:first-child, .table td:first-child{ border-left: 0 }
 .table th.line{border-right: 1px solid #ddd;}
-.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: left; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; }
+.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; }
 .table td.line{border-left: 1px solid #eee !important;}
 .table td.pad0{padding:18px 0 !important}
 .table th.pad0{padding:18px 0 !important}
@@ -612,3 +625,83 @@ ul.bxslider {  list-style: none;}
 .facility li{width:330px; float:left; padding-right:20px; text-align:center;font-family:'notoKrR'; margin-bottom: 15px;}
 .facility li:nth-of-type(3n){width:310px;padding-right:0px;}
 .facility li img{margin-bottom:5px;}
+
+/*연구지원서비스*/
+.file-link{text-decoration:underline; color: #0770bb}
+
+/* 로그인 */
+.login-box{width: 980px; height: 620px; margin:0 auto;  border:1px solid #dddddd; border-radius: 8px; text-align: center;letter-spacing:-0.07em;}
+.login-box p{text-align: center;}
+.login-box .title-style2{ margin-top: 95px;}
+.login-box .login-text02{color: #777; font-size: 18px; margin-top: 20px;}
+.login-box .login-text03{color: #777; font-size: 16px; margin-top: 80px;}
+.login-box .input-wrap{width: 715px;  position: relative;margin: 50px auto 0;}
+.login-box .input-wrap:after { display: block; content: ""; }
+.login-box .input-wrap input[type=text], .login-box .input-wrap input[type=password]{ height: 60px; width: 573px; display: block; margin-bottom: 10px; font-size: 16px }
+.login-box .input-wrap .btn{position: absolute; top: 0; right: 0; width: 130px; height: 130px; font-size: 18px; }
+.login-box .btn-wrap{margin-top: 30px; }
+.login-box .btn-wrap .btn{width: 200px; height: 50px; letter-spacing:-0.08em;}
+    
+/* 회원가입쪽 타이틀 */
+.member-wrap .title-style2{text-align: center;}
+.member-wrap .text-style2{font-size: 18px; color: #777; margin-top: 12px;text-align: center;}
+.member-wrap .text-style1{ color:#333; font-family:'NotoKrDL';text-align: center; margin-bottom: 80px;text-align: center;}
+.member-wrap .text-style1.line{line-height: 26px; margin-bottom: 75px;}
+.member-wrap .text-style1 .acc{color:#0770bb ; vertical-align: bottom;font-family:'notoKrM',sans-serif;}
+.member-wrap .text-style4.pw-reset{width: 580px; display: block; margin:10px auto 30px; line-height: 22px; position: relative; padding-left: 8px; }
+.member-wrap .text-style4.pw-reset .acc{position: absolute; top: 3px; left: 0px}
+
+/* 아이디 및 비밀번호찾기 타이틀 */
+.pagetitle-wrap.along{ margin-bottom: 30px; }
+
+/* 회원가입 절차 안내 */
+.step-wrap{ margin:0 auto; width: 612px; margin: 3px auto 30px;}
+.step-wrap li{display:inline-block;padding:0px;text-align:center; position:relative; width: 72px;margin-left:105px;}
+.step-wrap li:before{ content: ''; position: absolute; ;left: -114px; top: 15px; width: 123px;    height: 2px;  background:url('../img/icon_dot_line.png') }
+.step-wrap li:first-child{ margin-left: 0;}
+.step-wrap li:first-child:before{  content:'';display:none;}
+.step-wrap li .txt{font-size: 20px; margin-top: 10px; display: inline-block; color: #777}
+.step-wrap li .StepNum{width: 30px; height: 30px; color: #fff; background: #777; font-size: 16px;font-family:'notoKrM',sans-serif; display: block; border-radius: 30px; line-height: 28px; font-weight: normal; margin:0 auto;}
+.step-wrap li.stepOn .txt{color: #0770bb; font-family:'notoKrM',sans-serif;}
+.step-wrap li.stepOn .StepNum{ background: #0770bb; font-weight: normal;}
+
+/* 회원가입 */
+.member-wrap .btn-wrap{ width: 880px; margin:50px auto 80px; }
+.member-wrap .btn-wrap .btn-big{ width: 280px; height: 340px ;background-color: #fff; border:3px solid #dddddd; color: #333; font-size: 24px; cursor: pointer; border-radius: 25px 0 0 0; position: relative;}
+.member-wrap .btn-wrap .btn-icon{ margin: 0 auto;  width: 145px; height: 125px;background:url('../img/icon_join.png') no-repeat; margin-bottom: 27px;}
+.member-wrap .btn-wrap .normal .btn-icon{ background-position: -145px 0; } 
+.member-wrap .btn-wrap .child .btn-icon{ background-position: -145px  -125px;} 
+.member-wrap .btn-wrap .foreigner .btn-icon{ background-position: -145px -250px;} 
+.member-wrap .btn-wrap .phone .btn-icon{ background-position: -145px -515px;height: 140px;margin-bottom: 32px;}
+.member-wrap .btn-wrap .ipin .btn-icon{ background-position: -145px -375px;height: 140px;margin-bottom: 32px;}
+.member-wrap .btn-wrap .btn-big {margin-left:16px;}
+.member-wrap .btn-wrap .btn-big:first-child{margin-left:0px;}
+.member-wrap .btn-wrap .btn-big .check-icon{width: 35px; height: 35px; position: absolute; top:20px; left: 20px; }
+.member-wrap .btn-wrap .btn-big .s-text{ font-size:16px; ;color:#777; font-family:'NotoKrL'}
+.member-wrap .btn-wrap .btn-big:hover, .member-wrap .btn-wrap .btn-big:focus{color: #fff;background: #199da3; border:0;  
+	background: -moz-linear-gradient(-45deg, #199da3 0%, #199da3 31%, #0b79b6 100%); 
+	background: -webkit-linear-gradient(-45deg, #199da3 0%,#199da3 31%,#0b79b6 100%);
+	background: linear-gradient(135deg, #199da3 0%,#199da3 31%,#0b79b6 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#199da3', endColorstr='#0b79b6',GradientType=1)}
+.member-wrap .btn-wrap .normal:hover .btn-icon, .member-wrap .btn-wrap .normal:focus .btn-icon{ background-position: 0px 0px; } 
+.member-wrap .btn-wrap .child:hover .btn-icon, .member-wrap .btn-wrap .child:focus .btn-icon{ background-position: 0px -125px;} 
+.member-wrap .btn-wrap .foreigner:hover .btn-icon, .member-wrap .btn-wrap .foreigner:focus .btn-icon{ background-position: 0px -250px;}
+.member-wrap .btn-wrap .phone:hover .btn-icon, .member-wrap .btn-wrap .phone:focus .btn-icon{ background-position: 0px -515px;}
+.member-wrap .btn-wrap .ipin:hover .btn-icon, .member-wrap .btn-wrap .ipin:focus .btn-icon{ background-position: 0px -375px;}
+.member-wrap .btn-wrap .btn-big:hover .check-icon, .member-wrap .btn-wrap .btn-big:focus .check-icon{background:url('../img/icon_components.png') no-repeat 0 -83px;}
+.member-wrap .btn-wrap .btn-big:hover .s-text, .member-wrap .btn-wrap .btn-big:focus .s-text{color:#fff; }
+.member-wrap .btn-wrap .line1 .btn-icon{ margin-bottom: 47px; margin-top: 3px;}
+
+
+/* 회원가입 완료  */
+.member-wrap .join-finish{width: 980px; height: 452px; margin: 80px auto 40px; padding-bottom: 70px; border:1px solid #ddd; border-radius: 8px}
+.member-wrap .join-finish .finish-icon{width:152px; height: 145px;  background: url(../img/icon_err.png) no-repeat -1px -347px ;margin: 77px auto 0; }
+.member-wrap .join-finish .finish-tit{font-size: 30px; line-height: 37px; color: #000; text-align:center; margin:25px 0 16px}
+.member-wrap .join-finish .finish-cont{font-size: 18px; color: #777; text-align:center;}
+
+/* 아이디 및 비밀번호찾기 */
+.member-wrap .find-id-result li > div{ width: 277px; height: 280px; display: table-cell; vertical-align: middle; color: #333; font-size: 20px; background: #f8f8f8; border-radius: 12px 0 0 0; text-align: center;}
+.member-wrap .find-id-result li{display: inline-block; margin-left: 20px;}
+.member-wrap .find-id-result li:first-child  {margin-left: 0px;}
+.member-wrap .find-id-result li .res{color: #000; font-size: 28px;  font-family:'notoKrM',sans-serif; margin-top: 33px; font-weight: normal}
+.member-wrap .pw-find-input{width: 580px; height: 50px !important; display: block; margin:0 auto }
