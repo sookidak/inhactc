@@ -1,0 +1,108 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+    <div class="pagetitle-wrap">
+        <h1 class="title-style1">나의 예약 관리</h1>
+    </div>
+    <div class="contents">
+        <table class="table table-type3 height">
+            <caption><span class="offscreen">예약 관리대한 회의실, 이름, 시간, 제목, 내용 입력하는 표입니다.</span></caption>
+            <colgroup>
+                <col style="width:200px" />
+                <col style="" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>
+                        <label for="category">회의실<span class="acc">*<span class="offscreen">필수입력</span></span></label>
+                    </th>
+                    <td>
+
+                        <select id="category"  aria-haspopup="true" aria-controls="select-menu" title="회의실 리스트">
+                            <option lang="ko" value="1" role="menuitem">모니터실1</option>
+                            <option lang="ko" value="2" role="menuitem">모니터실2</option>
+                            <option lang="ko" value="3" role="menuitem">모니터실3</option>
+                            <option lang="ko" value="4" role="menuitem">모니터실4</option>
+                            <option lang="ko" value="5" role="menuitem">대회의실</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        이름<span class="acc">*<span class="offscreen">필수입력</span></span>
+                    </th>
+                    <td>
+                        송헌호
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        시간
+                    </th>
+                    <td>
+                        <div class="radio">
+                            <input type="radio" id="radio-a1" name="select1" value="am" aria-checked=”true” checked>
+                            <label for="radio-a1">오전</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio-a2" name="select1" value="pm" aria-checked=”false”>
+                            <label for="radio-a2">오후</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio-a3" name="select1" value="select" aria-checked=”false”>
+                            <label for="radio-a3">시간 선택</label>
+                        </div>
+                        <div class="marT5">
+                            <label for="from1" class="cal-btn marR0 datepicker">
+                                <input type="text" id="from1" name="from1" class="calendar" placeholder="시작일" value="2018-11-16" title="시작일">
+                            </label>
+                            <select id="time-start"  aria-haspopup="true" aria-controls="select-menu" title="시작 시간">
+                                <option lang="ko" value="1" role="menuitem">오전 10:00</option>
+                                <option lang="ko" value="2" role="menuitem">오전 10:30</option>
+                                <option lang="ko" value="3" role="menuitem">오전 11:00</option>
+                                <option lang="ko" value="4" role="menuitem">오전 11:30</option>
+                                <option lang="ko" value="5" role="menuitem">오후 12:00</option>
+                            </select>
+                            <span class="bar"> ~ </span>
+                            <label for="to1" class="cal-btn"><input type="text" id="to1" name="to1" class="calendar" placeholder="종료일" value="2018-11-16"></label>
+                            <select id="time-end"  aria-haspopup="true" aria-controls="select-menu" title="종료 시간" title="종료일">
+                                <option lang="ko" value="1" role="menuitem">오전 10:00</option>
+                                <option lang="ko" value="2" role="menuitem">오전 10:30</option>
+                                <option lang="ko" value="3" role="menuitem">오전 11:00</option>
+                                <option lang="ko" value="4" role="menuitem">오전 11:30</option>
+                                <option lang="ko" value="5" role="menuitem">오후 12:00</option>
+                            </select>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="title">제목</label>
+                    </th>
+                    <td>
+                        <input type="text" id="title" value="" class="title" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="content">내용</label>
+                    </th>
+
+                    <td>
+                        <textarea id="content"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-wrap marT60">
+            <button type="button" class="btn btn-l color02">저장</button>
+            <button type="button" class="btn btn-l color03 ">취소</button>
+        </div>
+    </div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

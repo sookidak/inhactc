@@ -1,0 +1,213 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+    <div class="pagetitle-wrap">
+        <h1 class="title-style1">나의 예약 관리</h1>
+    </div>
+    <div class="contents">
+        <div class="board-wrap">
+			<!-- board search box -->
+			<div class="search-box">	
+			    <!-- category  -->
+				<div class="select">					
+					<label for="selector">회의실</label>
+					<select id="selector" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" role="menuitem">회의실</option>	
+						<option lang="ko" value="1" role="menuitem">전체</option>	    
+						<option lang="ko" value="2" role="menuitem">모니터실1</option>	
+						<option lang="ko" value="3" role="menuitem">모니터실2</option>	
+						<option lang="ko" value="4" role="menuitem">모니터실3</option>	
+						<option lang="ko" value="5" role="menuitem">모니터실4</option>	
+						<option lang="ko" value="6" role="menuitem">대회의실</option>	  
+					</select>			
+				</div>
+				<!-- //category  -->
+				<!-- category  -->
+				<div class="select">					
+					<label for="selector2">예약상태</label>
+					<select id="selector2" class="" aria-haspopup="true" aria-controls="select-menu" >    
+						<option lang="ko" role="menuitem">예약상태</option>	
+						<option lang="ko" value="1" role="menuitem">전체</option>	    
+						<option lang="ko" value="2" role="menuitem">예약대기</option>	
+						<option lang="ko" value="3" role="menuitem">예약완료</option>	  
+					</select>			
+				</div>
+				<!-- //category  -->
+				<label><input type="text" id="" placeholder="찾으시는 검색어를 입력해주세요." /></label>
+				<button type="button" class="btn">검색</button>
+			</div>		
+			<p class="search-result">총 <span class="acc">17건</span>이 검색되었습니다.</p>
+			<!-- //board search box -->
+			<!-- Board_List-->		
+			<div class="board-list-wrap">
+				<table class="table table-type1">	  
+					<caption><span class="offscreen">Board_List</span></caption>  
+					<colgroup>	    
+						<col style="width:78px"/>	    
+						<col style="width:120px"/>	    
+						<col style="width:190px"/>	    
+						<col style=""/>	 
+						<col style="width:120px"/>	
+						<col style="width:220px"/>	 
+					</colgroup>	  
+					<thead>	    
+						<tr>	     
+							<th scope="col">No</th>
+							<th scope="col">회의실</th>
+							<th scope="col">시간</th>	
+							<th scope="col">제목</th>	   
+							<th scope="col">예약상태</th>	   
+							<th scope="col">관리</th>	    
+						</tr>	  
+					</thead>	  
+					<tbody>	   
+						<tr>	         
+							<td>4</td>	           
+							<td>대회의실</td> 
+							<td>2019.01.15  09:00~17:00</td>	      
+							<td class="title">주간회의</td>	
+							<td>예약대기</td>	
+							<td><button type="button" class="btn btn-s color01">예약변경</button> <button type="button" class="btn btn-s color03">예약취소</button></td>	    
+						</tr> 
+						<tr>	         
+							<td>3</td>	           
+							<td>모니터실1</td> 
+							<td>2019.01.15  09:00~17:00</td>	      
+							<td class="title">미간주름 개선이 필요한 성인환자 모임</td>	
+							<td><span class="reser-finish">예약완료</span></td>	
+							<td><button type="button" class="btn btn-s color01">예약변경</button> <button type="button" class="btn btn-s color03">예약취소</button></td>	    
+						</tr> 
+						<tr>	         
+							<td>2</td>	           
+							<td>모니터실2</td> 
+							<td>2019.01.15  09:00~17:00</td>	      
+							<td class="title">긴급회의</td>	
+							<td><span class="reser-finish">예약완료</span></td>	
+							<td><button type="button" class="btn btn-s color01">예약변경</button> <button type="button" class="btn btn-s color03">예약취소</button></td>	    
+						</tr> 
+						<tr>	         
+							<td>1</td>	           
+							<td>모니터실3</td> 
+							<td>2019.01.15  09:00~17:00</td>	      
+							<td class="title">프로젝트 회의</td>	
+							<td><span class="reser-finish">예약완료</span></td>	
+							<td><button type="button" class="btn btn-s color01">예약변경</button> <button type="button" class="btn btn-s color03">예약취소</button></td>	    
+						</tr> 
+					</tbody>	
+				</table>
+			</div>
+			<!-- //Board_List-->
+			<!-- paging Box-->
+			<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+				<div class="page"> 
+					<ul>							
+						<li>	        
+							<a href="#first" class="jump first">	 
+								<span>처음 페이지 보기</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#prev" class="jump prev">	          
+								<span>이전 10 페이지 보기</span>	        
+							</a>
+						</li>	
+						<li class="active"> 
+							<span>	
+								<span class="offscreen">현재 페이지</span>  
+								1
+							</span>
+						</li>
+						<li>  
+							<a href="#2">
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	
+									<span>2</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>	
+							<a href="#3">	            
+								<span>	            
+									<span class="offscreen">  페이지 보기  </span>	            
+									<span>3 </span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#4">	          
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>4 </span>
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#5">	
+								<span>	            
+									<span class="offscreen">  페이지 보기</span>	 
+									<span>5</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#6">	          
+								<span>	            
+									<span class="offscreen">  페이지 보기</span>	            
+									<span>6</span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#7">	          
+								<span>
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>7</span>	
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#8">
+								<span>	            
+									<span class="offscreen">  페이지 보기 </span>
+									<span>8</span>	          
+								</span>	        
+							</a>								
+						</li>								
+						<li>	 
+							<a href="#9">	          
+								<span>	            
+									<span class="offscreen">  페이지 보기 </span>	            
+									<span>9</span>	          
+								</span>	        
+							</a>
+						</li>								
+						<li>	        
+							<a href="#10">	          
+								<span>	
+									<span class="offscreen">  페이지 보기  </span>	            
+									<span>10</span>	          
+
+								</span>	        
+							</a>								
+						</li>								
+						<li>	        
+							<a href="#next" class="jump next">	 
+								<span>다음 10 페이지 보기</span>	        
+							</a>								
+						</li>								
+						<li>
+							<a href="#last" class="jump last">	          
+								<span>마지막 페이지 보기</span>	        
+							</a>
+						</li>	    
+					</ul>	  
+				</div>	
+			</div>
+			<!-- //paging Box-->
+		</div>
+    </div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
