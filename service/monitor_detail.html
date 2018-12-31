@@ -1,0 +1,57 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+@@include('../inc/location.html')
+<!-- container -->
+<section class="container" id="container">
+    <div class="pagetitle-wrap">
+        <h1 class="title-style1">모니터실 예약</h1>
+    </div>
+    <div class="contents">
+        <!-- tab-->
+        <div role="tablist" class="tablist-type1">
+            <a href="monitor_01.html" title="모니터실 예약 페이지 이동">모니터실 1</a>
+            <a href="javascript:;" class="active" title="모니터실 예약 페이지 이동">모니터실 2</a>
+            <a href="monitor_03.html" title="모니터실 예약 페이지 이동">모니터실 3</a>
+            <a href="monitor_04.html" title="모니터실 예약 페이지 이동">모니터실 4</a>
+            <a href="monitor_05.html" title="모니터실 예약 페이지 이동">대회의실</a>
+        </div>
+        <!-- tab-->
+        <table class="table table-type2 height">
+            <caption><span class="offscreen">모니터실 예약 관리 대한 회의실, 이름, 시간, 제목, 내용 입력하는 표입니다.</span></caption>
+            <colgroup>
+                <col style="width:200px" />
+                <col style="" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row" class="textL">이름</th>
+                    <td class="textL">송헌호</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="textL">소속</th>
+                    <td class="textL">CRC약품회사</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="textL">시간</th>
+                    <td class="textL">2018년 11월16일 오전 10:00 - 2018년 11월16일 오전 11:00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="textL">제목</th>
+                    <td class="textL">모니터실 2 예약</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="textL">내용</th>
+                    <td class="textL">송헌호 외 4명 회의 예정</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class="btn-wrap marT60">
+            <button type="button" class="btn btn-l color02">목록</button>
+            <button type="button" class="btn btn-l color01">수정</button>
+            <button type="button" class="btn btn-l color03 ">취소</button>
+        </div>
+    </div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')

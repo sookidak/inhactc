@@ -109,7 +109,7 @@
                                     <button>오전 10시. CRC약품회사. 송헌호</button>
                                     <button class="active">오전 11시. CRC약품회사. 송헌호</button>
                                     <button>오후 2시. CRC약품회사. 송헌호</button>
-                                    <button>오 1시. CRC약품회사. 송헌호</button>
+                                    <button>오후 1시. CRC약품회사. 송헌호</button>
                                     <button class="m-calender-close">닫기</button>
                                 </div>
                             </div>
@@ -142,4 +142,42 @@
     </div>
 </section>
 <!-- //container -->
+
+<!-- layer popup active로 보이기 조정-->
+<div id="layer-bg" class="active"></div>
+<div id="layer-box" role="dialog" aria-labelledby="layerpopup" class="active">
+    <div>
+        <div class="layer-wrap rolling">
+            <div class="layer-cont " style="z-index: 4">
+                <h3 class="title-style3">예약 상세</h3>
+                <table class="table table-type2 marT30">
+                    <caption><span class="offscreen">예약 대한 이름,소속,시간 상세 리스트입니다. </span></caption>
+                    <colgroup>
+                        <col style="width:150px" />
+                        <col style="" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="textL" scope="row">이름</th>
+                            <td class="textL">송헌호</td>
+                        </tr>
+                        <tr>
+                            <th class="textL" scope="row">소속</th>
+                            <td class="textL">CRC 약품회사</td>
+                        </tr>
+                        <tr>
+                            <th class="textL" scope="row">시간</th>
+                            <td class="textL">2018년 11월 16일 오전 10:00 - 2018년  11월 16일 오전 11:00</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+        <div class="layer-close">
+            <div>
+                <button type="button" class="btn-close"><span class="offscreen">레이어 닫기</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //layer popup -->
 @@include('../inc/footer.html')

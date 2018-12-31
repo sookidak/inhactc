@@ -1,0 +1,14 @@
+h1{ font-size: 28px; text-align: left; margin:20px 0 30px; font-family: 'NotoKrM',sans-serif; }
+
+/*모니터실 예약 print*/
+.offscreen{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+.m-calender{ border-top:2px solid #bbbbbb; margin-top: 30px; width: 940px;}
+.m-calender .m-calender-head{text-align: right; height: 85px;  line-height: 85px; font-size:30px;}
+.m-calender .m-calender-table{width:100%;font-size:18px;}
+.m-calender .m-calender-table th{padding:18px 20px;font-size:18px; border-top:1px solid #ddd; border-bottom:1px solid #eee; border-left:1px solid #eee;font-family:'notoKrR';  }
+.m-calender .m-calender-table td{font-size:18px; padding:20px; min-height:170px; vertical-align: top; border-bottom:1px solid #eee; border-left:1px solid #eee;font-family:'notoKrR';  position: relative;}
+.m-calender .m-calender-table p{font-family:'notoKrL',sans-serif;font-size:14px; line-height:20px; padding-top:7px; text-align:left;}
+.m-calender .m-calender-table p:first-child{padding-top:20px;}
+.m-calender .m-calender-table p span{color: #777}
+.m-calender .m-calender-table th:first-child,.m-calender .m-calender-table td:first-child{border-left: 0px;}
+.m-calender .m-calender-table .day-out{font-family:'notoKrL'; color:#999}
