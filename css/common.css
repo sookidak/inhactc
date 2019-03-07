@@ -72,7 +72,7 @@
 .gnb-2depth >li >a.has-depth:hover:after,.gnb-2depth >li >a.has-depth.active:after{content:'';display:inline-block;position:absolute;right:10px;top:50%;margin-top:-6.5px;width:8px;height:13px;background:url('../img/icon_header.png') -80px -100px no-repeat;z-index:1000;}
 
 .gnb3-wrap{position:absolute;left:180px;top:-1px;bottom:-1px;right:-1px;padding-top:30px;background:#0770bb;width:180px;z-index:1000;color:#fff;display:none;}
-.gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family: 'NotoKrDL';}
+.gnb-3depth li a{font-size:16px;color:#fff;line-height:36px;font-family:  'NotoKrR';}
 .gnb-3depth li a:hover,.gnb-3depth li a.active{border-bottom:1px solid #fff;}
 
 
@@ -209,7 +209,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .checkbox-type2 input[type=checkbox]:disabled:checked +label:before{background-position: 0px -120px;}
 
 /* radio */
-.radio{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
+.radio{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;letter-spacing:0}
 .radio input[type=radio]{position:absolute;left:3px;top:3px;}
 .radio label{display:inline-block;position:relative;padding-left:35px;min-width:30px;min-height:30px;line-height:30px;color:#777;}
 .radio label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:#fff;cursor:pointer;border:1px solid #ddd;box-sizing:border-box;border-radius:25px;z-index:10;}
@@ -330,7 +330,7 @@ button.more{width: 180px; height: 40px; background: #fff; border:1px solid #aaa;
 .paragraph p{margin-bottom: 25px;}
 
 .NotoKrL {font-family: 'NotoKrL',sans-serif; font-weight: normal; }
-.NotoKrDL {font-family: 'NotoKrDL',sans-serif; font-weight: normal;}
+.NotoKrDL {font-family:  'NotoKrR',sans-serif; font-weight: normal;}
 .NotoKrR {font-family: 'NotoKrR',sans-serif;  font-weight: normal;}
 .NotoKrM {font-family: 'NotoKrM',sans-serif; font-weight: normal; }
 .NotoKrB {font-family: 'NotoKrB',sans-serif; font-weight: normal; }
@@ -516,7 +516,7 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 
 /* layer popup */
 #layer-bg{ display: none;position: fixed; top:0; left: 0; width: 100%; height: 100%;background-color: #3d4044; opacity: 0.8; z-index: 9999}
-#layer-box{display: none;width: 600px; min-height: 100px; background-color: #fff;  position: fixed; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ; z-index: 10000; -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6); -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);	box-shadow: 5px 5px 5px rgba(68,68,68,0.6); }
+#layer-box{display: none;width: 600px; min-height: 100px; background-color: #fff;  position: fixed; top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%) ;-webkit-transform: translateY(-50%) translateX(-50%) ; z-index: 10000; -moz-box-shadow: 5px 5px 5px rgba(68,68,68,0.6); -webkit-box-shadow: 5px 5px 5px rgba(68,68,68,0.6);	box-shadow: 5px 5px 5px rgba(68,68,68,0.6); }
 #layer-bg.active, #layer-box.active{display: block;}
 #layer-box > div{position: relative;}
 #layer-box .layer-wrap{max-height: 700px;position: relative; margin-bottom: 50px;}
@@ -613,8 +613,11 @@ select:focus{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color
 .main-right h2 a{ font-size: 28px; font-weight: normal; color: #000; border-bottom: 1px solid #dddddd; padding-bottom: 20px; position: relative; letter-spacing: -0.08em; display: block;}
 .main-right h2 a:after{content: ""; display: block; width: 22px;height: 22px;  background: url('../img/icon_main.png') 0 0 no-repeat; position: absolute; right: 0; top: 0;}
 .main-right ul{margin-top: 30px;}
-.main-right ul li{padding-left:13px;position: relative;margin-bottom:16px;font-size:16px;color:#777;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.main-right ul li{padding-left:13px;position: relative;margin-bottom:16px;font-size:16px;color:#777;}
 .main-right ul li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-1px;width:4px;height:4px;background:#aaa;}
+
+.main-right .bot li a{ width: 300px;display:inline-block;text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+.main-right .bot li span{float: right; font-size: 15px; color: #333; display: inline-block; position: relative; top:4px; width: 60px; text-align: center}
 
 
 
@@ -651,7 +654,7 @@ ul.bxslider {  list-style: none;}
 .intro-text2{font-size:20px; font-family:'notoKrR'; color: #333} 
 
 /*비젼_미션*/
-.mission-text01{ font-size: 24px;font-family:'notoKrDL';}
+.mission-text01{ font-size: 24px;font-family: 'NotoKrR';}
 .mission-text01 span{ color:#0770bb;}
 .vission-list dt{color: #0770bb;font-size: 24px;font-family:'notoKrM';text-transform: uppercase; margin-bottom: 10px; letter-spacing: 0px;}
 .vission-list dd{font-size:16px; margin-bottom: 28px; }
@@ -687,7 +690,7 @@ ul.bxslider {  list-style: none;}
 /* 회원가입쪽 타이틀 */
 .member-wrap .title-style2{text-align: center;}
 .member-wrap .text-style2{font-size: 18px; color: #777; margin-top: 12px;text-align: center;}
-.member-wrap .text-style1{ color:#000; font-family:'NotoKrDL';text-align: center; margin-bottom: 80px;text-align: center;}
+.member-wrap .text-style1{ color:#000; font-family: 'NotoKrR';text-align: center; margin-bottom: 80px;text-align: center;}
 .member-wrap .text-style1.line{line-height: 26px; margin-bottom: 75px;}
 .member-wrap .text-style1 .acc{color:#0770bb ; vertical-align: bottom;font-family:'notoKrM',sans-serif;}
 .member-wrap .text-style4.pw-reset{width: 580px; display: block; margin:10px auto 30px; line-height: 22px; position: relative; padding-left: 8px; }
